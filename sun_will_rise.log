@@ -1,0 +1,66 @@
+14:13:44,947 __main__ INFO Starting sun_will_rise_script
+14:13:48,281 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api.sunrise-sunset.org
+14:13:49,508 urllib3.connectionpool DEBUG https://api.sunrise-sunset.org:443 "GET /json?lat=-33.900387&lng=18.413332 HTTP/1.1" 200 None
+14:13:49,511 tweepy.binder INFO PARAMS: {'status': b'Yes'}
+14:13:49,512 requests_oauthlib.oauth1_auth DEBUG Signing request <PreparedRequest [POST]> using client <Client client_key=, client_secret=None, resource_owner_key=, resource_owner_secret=None, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>
+14:13:49,512 requests_oauthlib.oauth1_auth DEBUG Including body in call to sign: False
+14:13:49,512 oauthlib.oauth1.rfc5849 DEBUG Collected params: [('status', 'Yes'), ('oauth_nonce', '165220936626289094331559132029'), ('oauth_timestamp', '1559132029'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', '')]
+14:13:49,512 oauthlib.oauth1.rfc5849 DEBUG Normalized params: oauth_consumer_key=&oauth_nonce=165220936626289094331559132029&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1559132029&oauth_version=1.0&status=Yes
+14:13:49,512 oauthlib.oauth1.rfc5849 DEBUG Normalized URI: https://api.twitter.com/1.1/statuses/update.json
+14:13:49,513 oauthlib.oauth1.rfc5849 DEBUG Signing: signature base string: POST&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fupdate.json&oauth_consumer_key%3D%26oauth_nonce%3D165220936626289094331559132029%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1559132029%26oauth_version%3D1.0%26status%3DYes
+14:13:49,513 oauthlib.oauth1.rfc5849 DEBUG Signature: XIDD7HSL7rteqjpDZAikUtpHqZ0=
+14:13:49,513 requests_oauthlib.oauth1_auth DEBUG Updated url: https://api.twitter.com/1.1/statuses/update.json?status=Yes
+14:13:49,513 requests_oauthlib.oauth1_auth DEBUG Updated headers: {'Host': 'api.twitter.com', 'Content-Length': '0', 'Authorization': 'OAuth oauth_nonce="165220936626289094331559132029", oauth_timestamp="1559132029", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="", oauth_signature="XIDD7HSL7rteqjpDZAikUtpHqZ0%3D"'}
+14:13:49,513 requests_oauthlib.oauth1_auth DEBUG Updated body: None
+14:13:49,516 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api.twitter.com
+14:13:50,430 urllib3.connectionpool DEBUG https://api.twitter.com:443 "POST /1.1/statuses/update.json?status=Yes HTTP/1.1" 400 62
+14:14:05,766 __main__ INFO Starting sun_will_rise_script
+14:14:05,778 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api.sunrise-sunset.org
+14:14:07,19 urllib3.connectionpool DEBUG https://api.sunrise-sunset.org:443 "GET /json?lat=-33.900387&lng=18.413332 HTTP/1.1" 200 None
+14:14:07,22 tweepy.binder INFO PARAMS: {'status': b'Yes'}
+14:14:07,23 requests_oauthlib.oauth1_auth DEBUG Signing request <PreparedRequest [POST]> using client <Client client_key=b4OdwJfvcrm0c8gXHmfGPqCkC, client_secret=****, resource_owner_key=1133702789643816960-XaCg5YGin9RQk9tJgF2bz8bYLyi2rG, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>
+14:14:07,23 requests_oauthlib.oauth1_auth DEBUG Including body in call to sign: False
+14:14:07,24 oauthlib.oauth1.rfc5849 DEBUG Collected params: [('status', 'Yes'), ('oauth_nonce', '107633492742994801621559132047'), ('oauth_timestamp', '1559132047'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'b4OdwJfvcrm0c8gXHmfGPqCkC'), ('oauth_token', '1133702789643816960-XaCg5YGin9RQk9tJgF2bz8bYLyi2rG')]
+14:14:07,24 oauthlib.oauth1.rfc5849 DEBUG Normalized params: oauth_consumer_key=b4OdwJfvcrm0c8gXHmfGPqCkC&oauth_nonce=107633492742994801621559132047&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1559132047&oauth_token=1133702789643816960-XaCg5YGin9RQk9tJgF2bz8bYLyi2rG&oauth_version=1.0&status=Yes
+14:14:07,24 oauthlib.oauth1.rfc5849 DEBUG Normalized URI: https://api.twitter.com/1.1/statuses/update.json
+14:14:07,24 oauthlib.oauth1.rfc5849 DEBUG Signing: signature base string: POST&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fupdate.json&oauth_consumer_key%3Db4OdwJfvcrm0c8gXHmfGPqCkC%26oauth_nonce%3D107633492742994801621559132047%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1559132047%26oauth_token%3D1133702789643816960-XaCg5YGin9RQk9tJgF2bz8bYLyi2rG%26oauth_version%3D1.0%26status%3DYes
+14:14:07,24 oauthlib.oauth1.rfc5849 DEBUG Signature: 7S6svOSlHWZaia+avZaM9C8UOlY=
+14:14:07,24 requests_oauthlib.oauth1_auth DEBUG Updated url: https://api.twitter.com/1.1/statuses/update.json?status=Yes
+14:14:07,25 requests_oauthlib.oauth1_auth DEBUG Updated headers: {'Host': 'api.twitter.com', 'Content-Length': '0', 'Authorization': 'OAuth oauth_nonce="107633492742994801621559132047", oauth_timestamp="1559132047", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="b4OdwJfvcrm0c8gXHmfGPqCkC", oauth_token="1133702789643816960-XaCg5YGin9RQk9tJgF2bz8bYLyi2rG", oauth_signature="7S6svOSlHWZaia%2BavZaM9C8UOlY%3D"'}
+14:14:07,25 requests_oauthlib.oauth1_auth DEBUG Updated body: None
+14:14:07,27 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api.twitter.com
+14:14:07,915 urllib3.connectionpool DEBUG https://api.twitter.com:443 "POST /1.1/statuses/update.json?status=Yes HTTP/1.1" 403 60
+14:17:03,793 __main__ INFO Starting sun_will_rise_script
+14:17:07,212 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api.sunrise-sunset.org
+14:17:08,472 urllib3.connectionpool DEBUG https://api.sunrise-sunset.org:443 "GET /json?lat=-33.900387&lng=18.413332 HTTP/1.1" 200 None
+14:17:08,475 __main__ INFO Tweeted: Yes
+14:18:09,630 __main__ INFO Starting sun_will_rise_script
+14:18:16,544 __main__ INFO Starting sun_will_rise_script
+14:18:16,555 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api.sunrise-sunset.org
+14:18:17,717 urllib3.connectionpool DEBUG https://api.sunrise-sunset.org:443 "GET /json?lat=-33.900387&lng=18.413332&format=0 HTTP/1.1" 200 None
+14:18:17,720 __main__ INFO Tweeted: Yes
+14:18:27,452 __main__ INFO Starting sun_will_rise_script
+14:18:27,461 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api.sunrise-sunset.org
+14:18:28,650 urllib3.connectionpool DEBUG https://api.sunrise-sunset.org:443 "GET /json?lat=-33.900387&lng=18.413332&formatted=0 HTTP/1.1" 200 None
+14:18:28,653 __main__ INFO Tweeted: Yes
+14:26:14,413 __main__ INFO Starting sun_will_rise_script
+14:26:17,643 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api.sunrise-sunset.org
+14:26:18,871 urllib3.connectionpool DEBUG https://api.sunrise-sunset.org:443 "GET /json?lat=-33.900387&lng=18.413332 HTTP/1.1" 200 None
+14:26:18,874 __main__ INFO Tweeted: 29 May 2019: Yes
+14:27:48,561 __main__ INFO Starting sun_will_rise_script
+14:27:50,8 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api.sunrise-sunset.org
+14:27:51,327 urllib3.connectionpool DEBUG https://api.sunrise-sunset.org:443 "GET /json?lat=-33.900387&lng=18.413332 HTTP/1.1" 200 None
+14:27:51,330 tweepy.binder INFO PARAMS: {'status': b'29 May 2019: Yes'}
+14:27:51,331 requests_oauthlib.oauth1_auth DEBUG Signing request <PreparedRequest [POST]> using client <Client client_key=b4OdwJfvcrm0c8gXHmfGPqCkC, client_secret=****, resource_owner_key=1133702789643816960-XaCg5YGin9RQk9tJgF2bz8bYLyi2rG, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>
+14:27:51,331 requests_oauthlib.oauth1_auth DEBUG Including body in call to sign: False
+14:27:51,332 oauthlib.oauth1.rfc5849 DEBUG Collected params: [('status', '29 May 2019: Yes'), ('oauth_nonce', '91850805295768164221559132871'), ('oauth_timestamp', '1559132871'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'b4OdwJfvcrm0c8gXHmfGPqCkC'), ('oauth_token', '1133702789643816960-XaCg5YGin9RQk9tJgF2bz8bYLyi2rG')]
+14:27:51,332 oauthlib.oauth1.rfc5849 DEBUG Normalized params: oauth_consumer_key=b4OdwJfvcrm0c8gXHmfGPqCkC&oauth_nonce=91850805295768164221559132871&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1559132871&oauth_token=1133702789643816960-XaCg5YGin9RQk9tJgF2bz8bYLyi2rG&oauth_version=1.0&status=29%20May%202019%3A%20Yes
+14:27:51,333 oauthlib.oauth1.rfc5849 DEBUG Normalized URI: https://api.twitter.com/1.1/statuses/update.json
+14:27:51,333 oauthlib.oauth1.rfc5849 DEBUG Signing: signature base string: POST&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fupdate.json&oauth_consumer_key%3Db4OdwJfvcrm0c8gXHmfGPqCkC%26oauth_nonce%3D91850805295768164221559132871%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1559132871%26oauth_token%3D1133702789643816960-XaCg5YGin9RQk9tJgF2bz8bYLyi2rG%26oauth_version%3D1.0%26status%3D29%2520May%25202019%253A%2520Yes
+14:27:51,333 oauthlib.oauth1.rfc5849 DEBUG Signature: 2OMOU5TqgMMX4sWFYsoxP8FyBWY=
+14:27:51,333 requests_oauthlib.oauth1_auth DEBUG Updated url: https://api.twitter.com/1.1/statuses/update.json?status=29+May+2019%3A+Yes
+14:27:51,333 requests_oauthlib.oauth1_auth DEBUG Updated headers: {'Host': 'api.twitter.com', 'Content-Length': '0', 'Authorization': 'OAuth oauth_nonce="91850805295768164221559132871", oauth_timestamp="1559132871", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="b4OdwJfvcrm0c8gXHmfGPqCkC", oauth_token="1133702789643816960-XaCg5YGin9RQk9tJgF2bz8bYLyi2rG", oauth_signature="2OMOU5TqgMMX4sWFYsoxP8FyBWY%3D"'}
+14:27:51,333 requests_oauthlib.oauth1_auth DEBUG Updated body: None
+14:27:51,356 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api.twitter.com
+14:27:52,195 urllib3.connectionpool DEBUG https://api.twitter.com:443 "POST /1.1/statuses/update.json?status=29+May+2019%3A+Yes HTTP/1.1" 200 2064
+14:27:52,203 __main__ INFO Tweeted: 29 May 2019: Yes
